@@ -55,9 +55,9 @@ print('Name list in AB group:',names_in_each_group[3])
 
 # Part 5
 
-names_in_each_group[0].remove('Arise')
-names_in_each_group[0].remove('Alice')
-names_in_each_group[0].remove('Auto')
+for names in names_in_each_group[0]:
+    print(names)
+    
 print('Groupe A was removed:', names_in_each_group[0])
 
 # Final Part
