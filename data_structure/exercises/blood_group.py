@@ -85,6 +85,5 @@ del bloody_group[0][:]
 print('Groupe A was removed:', bloody_group[0])
 
 # Final Part
-
 for group in bloody_group:
     print('update the name in all groups:', group)
