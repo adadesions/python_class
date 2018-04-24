@@ -17,7 +17,7 @@
 """
 # List
 
-names_in_each_group = [    
+bloody_group = [    
 # Group A [0]
     ['Arise', 'Alice', 'Auto'],
 
@@ -30,36 +30,36 @@ names_in_each_group = [
 ]
  # Part 1
 
-print('First person name in all groups:', names_in_each_group [0][0], ',', names_in_each_group[1][0], ',', names_in_each_group[2][0])
+print('First person name in all groups:', bloody_group [0][0],',', bloody_group[1][0],',',bloody_group[2][0])
 
 # Part 2
 
-names_in_each_group[1].append('Brown')
-print('Group B plus one:', names_in_each_group[1])
+bloody_group[1].append('Brown')
+print('Group B plus one:', bloody_group[1])
  
 # Part 3
 
-names_in_each_group.append([])
-print('Group AB set:', names_in_each_group[3])
+bloody_group.append([])
+print('Group AB set:', bloody_group[3])
 
 # Part 4
 
-names_in_each_group[3].append(names_in_each_group[0][0])
-names_in_each_group[3].append(names_in_each_group[0][1])
-names_in_each_group[3].append(names_in_each_group[0][2])
-names_in_each_group[3].append(names_in_each_group[1][0])
-names_in_each_group[3].append(names_in_each_group[1][1])
-names_in_each_group[3].append(names_in_each_group[1][2])
-names_in_each_group[3].append(names_in_each_group[1][3])
-print('Name list in AB group:',names_in_each_group[3])
+bloody_group[3].append(bloody_group[0][0])
+bloody_group[3].append(bloody_group[0][1])
+bloody_group[3].append(bloody_group[0][2])
+bloody_group[3].append(bloody_group[1][0])
+bloody_group[3].append(bloody_group[1][1])
+bloody_group[3].append(bloody_group[1][2])
+bloody_group[3].append(bloody_group[1][3])
+print('Name list in AB group:',bloody_group[3])
 
 # Part 5
 
-for names in names_in_each_group[0]:
+for names in bloody_group[0]:
     print(names)
     
-print('Groupe A was removed:', names_in_each_group[0])
+print('Groupe A was removed:', bloody_group[0])
 
 # Final Part
-for name_in_each_group in names_in_each_group:
+for name_in_each_group in bloody_group:
     print('update the name in all groups:', name_in_each_group)
