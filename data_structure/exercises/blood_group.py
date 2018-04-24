@@ -17,26 +17,40 @@
 """
 # List
 
-bloody_group = [    
-# Group A [0]
+bloody_group = [
+    # Group A [0]
     ['Arise', 'Alice', 'Auto'],
 
-# Group B [1]
+    # Group B [1]
     ['Boron', 'Bernard', 'Better'],
 
-# Group O [2]
+    # Group O [2]
     ['Orio', 'Otaro', 'Otsu']
-# Group AB [3]
+    # Group AB [3]
 ]
- # Part 1
+group_name = ['A', 'B', 'O']
+# Part 1
 
-print('First person name in all groups:', bloody_group [0][0],',', bloody_group[1][0],',',bloody_group[2][0])
-
+# print('First person name in all groups:',
+#       bloody_group[0][0], ',',
+#       bloody_group[1][0], ',',
+#       bloody_group[2][0]
+#       )
+print('First person name in each groups: {0}, {1}, {2}'.format(
+        bloody_group[0][0],
+        bloody_group[1][0],
+        bloody_group[2][0],
+    )
+)
+for index, group in enumerate(bloody_group):
+    for name in group:
+        print('Group {0}: {1}'.format(group_name[index], name))
+        break
 # Part 2
 
 bloody_group[1].append('Brown')
 print('Group B plus one:', bloody_group[1])
- 
+
 # Part 3
 
 bloody_group.append([])
@@ -51,13 +65,13 @@ bloody_group[3].append(bloody_group[1][0])
 bloody_group[3].append(bloody_group[1][1])
 bloody_group[3].append(bloody_group[1][2])
 bloody_group[3].append(bloody_group[1][3])
-print('Name list in AB group:',bloody_group[3])
+print('Name list in AB group:', bloody_group[3])
 
 # Part 5
 
 for names in bloody_group[0]:
     print(names)
-    
+
 print('Groupe A was removed:', bloody_group[0])
 
 # Final Part
