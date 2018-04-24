@@ -76,10 +76,7 @@ for i, group in enumerate(bloody_group):
 print('Name list in AB group:', bloody_group[3])
 
 # Part 5
-
-for names in bloody_group[0]:
-    print(names)
-
+del bloody_group[0][:]
 print('Groupe A was removed:', bloody_group[0])
 
 # Final Part
