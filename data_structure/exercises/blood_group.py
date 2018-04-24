@@ -58,13 +58,21 @@ print('Group AB set:', bloody_group[3])
 
 # Part 4
 
-bloody_group[3].append(bloody_group[0][0])
-bloody_group[3].append(bloody_group[0][1])
-bloody_group[3].append(bloody_group[0][2])
-bloody_group[3].append(bloody_group[1][0])
-bloody_group[3].append(bloody_group[1][1])
-bloody_group[3].append(bloody_group[1][2])
-bloody_group[3].append(bloody_group[1][3])
+# bloody_group[3].append(bloody_group[0][0])
+# bloody_group[3].append(bloody_group[0][1])
+# bloody_group[3].append(bloody_group[0][2])
+# bloody_group[3].append(bloody_group[1][0])
+# bloody_group[3].append(bloody_group[1][1])
+# bloody_group[3].append(bloody_group[1][2])
+# bloody_group[3].append(bloody_group[1][3])
+# print('Name list in AB group:', bloody_group[3])
+
+for i, group in enumerate(bloody_group):
+    for name in group:
+        if i > 1:
+            break
+        bloody_group[-1].append(name)
+
 print('Name list in AB group:', bloody_group[3])
 
 # Part 5
